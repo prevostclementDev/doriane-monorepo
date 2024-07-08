@@ -1,0 +1,89 @@
+@use 'sass:color';
+
+// Font primary
+@mixin fontPrimary($weight : 400){
+  font-family: $fontPrimary;
+  font-weight: $weight;
+}
+
+// Font secondary
+@mixin fontSecondary($weight : 400){
+  font-family: $fontSecondary;
+  font-style: normal;
+  font-weight: $weight;
+}
+
+// Typo
+@mixin typographie($name : text) {
+  $info : getTypographie($name);
+  @each $propertyText, $value in $info {
+    #{$propertyText} : #{$value}
+  }
+}
+
+// font size
+@mixin fontSize($name : s){
+  font-size: getFontSize($name);
+}
+
+// Color
+@mixin color($name : light1, $opacity : 1) {
+  color: getColor($name,$opacity);
+}
+
+// bg color
+@mixin bgColor($name : light1, $opacity : 1) {
+  background: getColor($name,$opacity);
+}
+
+// button
+@mixin interaction($name : button-primary){
+  $info : getInteraction($name);
+  @each $property, $value in $info {
+
+    @if $property == 'hover' or $property == 'focus' {
+
+      &:#{$property} {
+        @each $property2, $value2 in $value {
+          #{$property2} : #{$value2}
+        }
+      }
+
+    } @else {
+      #{$property} : #{$value}
+    }
+
+  }
+
+
+}
+
+// effect
+@mixin effect($name : blur){
+  $info : getEffects($name);
+  @each $property, $value in $info {
+    #{$property} : #{$value}
+  }
+}
+
+// HELPER
+@mixin flex($j : center,$a : center,$d : row,$w : nowrap,$gr : 0,$gc : 0) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+  flex-direction: $d;
+  flex-wrap: $w;
+  row-gap: $gr;
+  column-gap: $gc;
+}
+
+@mixin grid($tr : 1fr, $tc : 1fr,$area : false){
+  display: grid;
+  grid-template-rows: $tr;
+  grid-template-columns: $tc;
+
+  @if area != false {
+    grid-template-areas: $area;
+  }
+
+}

@@ -1,0 +1,53 @@
+@import "formStepByStep";
+@import "colorPicker/override";
+@import "datePicker/override";
+
+// global container for input
+.input-container {
+  @include flex(flex-start,stretch,column,wrap,1rem,1rem);
+  width: 100%;
+
+}
+
+.containerToolsTips {
+  @include flex(center,flex-end);
+  padding-bottom: .8rem;
+
+}
+
+// Group of input on same line
+.group {
+  width: 100%;
+  @include flex(space-between, stretch,row,nowrap,10px,10px);
+
+  label, input {
+    width: 100%;
+
+  }
+
+}
+
+// Action place with flex
+.action {
+  @include flex();
+  width: 100%;
+
+  &.start {
+    justify-content: flex-start;
+
+  }
+
+  &.between {
+    justify-content: space-between;
+  }
+
+  &.end {
+    justify-content: flex-end;
+  }
+
+  &.around {
+    justify-content: space-around;
+
+  }
+
+}

@@ -1,0 +1,15 @@
+.modal {
+  @include bgColor(light3);
+  border-radius: 10px;
+
+  .innerModal {
+    min-width: 60vw;
+
+    .tabsContainer {
+      margin-top: 1rem;
+
+    }
+
+  }
+
+}
