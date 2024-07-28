@@ -12,5 +12,6 @@
   "dependencies": {
     "sass": "^1.71.1",
     "@nuxt/kit": "3.0.0-rc.11"
-  }
+  },
+  "peerDependencies": {}
 }

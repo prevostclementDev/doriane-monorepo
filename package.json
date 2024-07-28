@@ -1,5 +1,5 @@
 {
-  "name": "@doriane-workspace",
+  "name": "@doriane/workspace",
   "version": "1.0.0",
   "description": "Doriane monorepo",
   "main": "index.js",
@@ -8,5 +8,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }

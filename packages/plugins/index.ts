@@ -5,8 +5,7 @@ export default defineNuxtModule({
 
     async setup(_, nuxt) {
 
-        addPlugin(join(__dirname, 'lib/helper.js'))
-        addPlugin(join(__dirname, 'lib/datePicker.js'))
+        // addPlugin(join(__dirname, 'lib/datePicker.js'))
 
     },
 

@@ -1,15 +1,15 @@
 <script setup>
+// script
 </script>
 
 <template>
-  <div class="modalContent">
-    <slot />
+  <div class="composant">
+    default copononemtn
   </div>
 </template>
 
 <style scoped lang="scss">
-.modalContent {
-  padding: 1.4rem;
+.composant {
 
 }
 </style>
