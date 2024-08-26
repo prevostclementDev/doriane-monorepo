@@ -1,4 +1,4 @@
-import { defineNuxtModule, addComponentsDir } from '@nuxt/kit'
+import {defineNuxtModule, addComponentsDir, installModule} from '@nuxt/kit'
 import { join } from 'path'
 
 export default defineNuxtModule({

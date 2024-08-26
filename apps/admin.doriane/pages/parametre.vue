@@ -4,7 +4,7 @@
 <template>
   <div class="container">
 
-    <ui-icon-text icon="" text="Accueil"></ui-icon-text>
+    <ui-icon-text icon="params" text="Paramètre"></ui-icon-text>
 
   </div>
 </template>
